@@ -36,9 +36,8 @@ function validated(){
         password.style.border = "1px solid red";
         pass_error.style.display = 'display';
         password.focus();
-        alert("Please Input Your Password")
+        alert("Need to input" + " " + (10 - password.value.length) + " " + "more character(s) for your password.");
         return false;
     }
 }
-
 
