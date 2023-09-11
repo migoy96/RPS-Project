@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-image: url(../images/bgimage.jpg);
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#title{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 42pt;
+    color: rgb(236, 228, 236);
+    margin-top: 100px;
+}
+
+.container{
+    object-fit: cover;
+    border: 0.1px solid antiquewhite;
+    border-radius: 8px;
+    box-shadow: 3px 2px 5px rgb(0, 0, 0);
+    width: 50%;
+    height: 480px;
+    margin-top: 50px;
+    margin-bottom: 200px;
+    backdrop-filter: blur(3px); 
+}
+
+.label{
+    color: rgb(202, 202, 202);
+    padding: 40px;
+    font-size: 30pt;
+}
+
+.font{
+    color: rgb(202, 202, 202);
+    font-weight: bold;
+    font-size: 25pt;
+}
+
+.input_box{
+    width: 65%;
+    height: 40px;
+    margin-bottom: 30px;
+}
+
+.input_box::placeholder{
+    font-style: italic;
+    font-size: 12pt;
+    opacity: 0.7;
+}
+
+#email_error{
+    font-size: 8pt;
+    color: rgb(238, 238, 238);
+    font-weight: bold;
+    
+}
+
+#pass_error{
+    font-size: 8pt;
+    color: rgb(238, 238, 238);
+    font-weight: bold;
+    
+}
+
+.button{
+    font-size: 15pt;
+    border: none;
+    border-radius: 5px;
+    width: 90px;
+    height: 30px;
+}
+
+.button:hover{
+    background-color: rgb(85, 85, 85);
+    transition: 0.5s ease;
+}
+
+
+

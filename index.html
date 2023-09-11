@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/rpsLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>LogIn Page - Hand War Gambit</title>
+</head>
+<body>
+    <center>
+        <header>
+            <h1 id="title">Welcome To Hand War Gambit</h1>
+        </header>
+        <div class="container">
+            <h2 class="label">Log-In to Play</h2>
+    
+            <form action="home.html" class="login_form" method="get" name="form" onsubmit="return validated()">
+    
+                <label for="email" class="font"><i class="fa-solid fa-user"></i></label>
+                <input autocomplete="off" type="email" name="email" class="input_box" placeholder="Input your Email Here*">
+                <br>
+                <div id="email_error"></div>
+                <br>
+                <label for="password" class="font font2"><i class="fa-solid fa-lock"></i></label>
+                <input type="password" name="password" class="input_box" placeholder="Input your Password Here*">
+                <br>
+                <div id="pass_error"></div>
+                <br>
+                <button type="submit" class="button">LogIn</button>
+        
+            </form>
+        </div>
+    </center>
+    
+
+    
+    
+    
+    <script src="js folder/index.js"></script>
+</body>
+</html>

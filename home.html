@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_home.css">
+    <link rel="icon" href="images/rpsLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Home - Hand War Gambit</title>
+</head>
+<body>
+
+    <center>
+      <h1 style="font-size: 25pt; margin: 80px;">This is a Game of Rock Paper Scissors</h1>
+
+      <div class="instruct_reset">
+        <!-- Trigger/Open The Modal (instruction) -->
+      <button class="instructReset_button" id="myBtn">INSTRUCTION</button>
+
+        <!-- The Modal -->
+      <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+            <p>Instructions:</p> <br>
+            <p>Please Choose on one of arsenals. <br><br>
+            <img class="modal_img" src="images/rock.png" alt="ROCK"> beats <img   class="modal_img" src="images/scissors.png" alt="SCISSORS">
+            <br><br>
+            <img class="modal_img" src="images/scissors.png" alt="SCISSORS"> beats <img   class="modal_img" src="images/paper.png" alt="PAPER">
+            <br><br>
+            <img class="modal_img" src="images/paper.png" alt="PAPER"> beats <img   class="modal_img" src="images/rock.png" alt="ROCK">
+            <br><br><br>
+            First one to reach 5 points WINS!
+          </p>
+        </div>
+
+      </div>
+      <!-- end of modal -->
+
+        <button class="instructReset_button" onclick="resetGame();"><i class="fa-solid fa-rotate-right"></i>RESET</button>
+        <button class="instructReset_button"><a href="index.html" style="padding-right: 35px;padding-left: 35px; text-decoration: none; color: black;">LOG-OUT</a></button>
+      </div>
+
+      <div class="arsenal_container">
+        <p style="font-weight: bolder; font-size: 15pt;">Please choose your arsenal:</p>
+        <button class="choice_button" id="rock"><img class="choice_img" src="images/rock.png" alt="ROCK"></button>
+        <button class="choice_button" id="paper"><img class="choice_img" src="images/paper.png" alt="PAPER"></button>
+        <button class="choice_button" id="scissors"><img class="choice_img" src="images/scissors.png" alt="SCISSORS"></button>
+      </div>
+      
+
+
+  <div id="score_match">
+    <h2 id="score_h2">Score</h2>
+    <span id="player-score">Player: 0</span>
+    <span> - </span>
+    <span id="computer-score">Computer: 0</span>
+  </div>
+
+  <div class="matchHistory_container">
+      <h2 style="margin-bottom: 30px;">Match History:</h2>
+    <div class="displayMatch_container">
+      <ul id="match-history">
+        <!-- display match history -->
+      </ul>
+    </div>
+  </div>
+  
+  
+  
+    </center>
+    
+
+  <script src="js folder/home.js"></script>
+</body>
+</html>
